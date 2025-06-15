@@ -1,0 +1,43 @@
+body {
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease;
+}
+.container {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.custom-table th {
+    background-color: #0d6efd;
+    color: white;
+}
+.form-group label {
+    font-weight: 500;
+    color: #0d6efd;
+}
+.btn-primary, .btn-success, .btn-warning, .btn-danger {
+    transition: all 0.3s ease;
+}
+.btn-primary:hover { background-color: #0056b3; }
+.btn-success:hover { background-color: #198754; }
+.btn-warning:hover { background-color: #ffc107; }
+.btn-danger:hover { background-color: #dc3545; }
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-item {
+        margin: 5px 0;
+    }
+}
